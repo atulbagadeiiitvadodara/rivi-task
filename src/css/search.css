@@ -1,0 +1,106 @@
+/* Example Styles for React Tags*/
+div.ReactTags__tags {
+  position: relative;
+}
+
+/* Styles for the input */
+div.ReactTags__tagInput {
+  margin-left: 2px;
+  width: 150px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+div.ReactTags__tagInput input.ReactTags__tagInputField,
+div.ReactTags__tagInput input.ReactTags__tagInputField:focus {
+  height: 31px;
+  margin: 0;
+  font-size: 15px;
+  width: 100%;
+  border: 1px solid #eee;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 3%;
+}
+
+/* Styles for selected tags */
+div.ReactTags__selected span.ReactTags__tag {
+  border: 1px solid rgb(166, 219, 226);
+  background: rgb(166, 219, 226);
+  font-size: 15px;
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 2px;
+}
+
+div.ReactTags__selected a.ReactTags__remove {
+  color: rgb(8, 1, 1);
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Styles for suggestions */
+div.ReactTags__suggestions {
+  position: absolute;
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  min-width: 300px;
+}
+
+div.ReactTags__suggestions ul {
+  list-style-type: none;
+  box-shadow: .05em .01em .5em rgba(0,0,0,.2);
+  background:  rgb(166, 219, 226);  
+}
+
+div.ReactTags__suggestions li {
+  border-bottom: 1px solid #ddd;
+  padding:10px;
+  margin: 0;  
+}
+
+div.ReactTags__suggestions li mark {
+  text-decoration: underline;
+  background: none;
+  font-weight: 600;
+}
+
+div.ReactTags__suggestions ul li.ReactTags__activeSuggestion { 
+  background:  rgb(166, 219, 226); 
+  cursor: pointer;
+}
+
+div.ReactTags__suggestions::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+div.ReactTags__suggestions::-webkit-scrollbar {
+  background-color: #F5F5F5;
+  background: transparent;
+  width: 0px;
+}
+
+div.ReactTags__suggestions::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: rgb(255, 255, 255);
+  /* background: transparent; */
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  border: 4px solid rgb(216, 216, 216);
+}
+
+.icon {
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: 1%;
+  margin-bottom: 5px;
+}
